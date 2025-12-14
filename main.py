@@ -72,5 +72,5 @@ def generate_examples():
         plot_polygon(polygon, f"Simple Polygon (n = {n}, time = {time:.3f}s)", f"polygon_{n}.png")
 
 if __name__ == "__main__":
-    generate_examples()
-    # main()
+    # generate_examples()
+    main()

@@ -69,7 +69,6 @@ def generate_poisson_points(n: int, min_dist: float = 2.0) -> np.ndarray:
     
     return np.array(points[:n], dtype=np.float64)
 
-
 def build_emst(points: np.ndarray) -> Dict[int, List[int]]:
     """Builds the Euclidean Minimum Spanning Tree of the point set."""
     n = len(points)
@@ -96,7 +95,6 @@ def build_emst(points: np.ndarray) -> Dict[int, List[int]]:
         adj[v].append(u)
     
     return dict(adj)
-
 
 def emst_to_path(points: np.ndarray, adj: Dict[int, List[int]]) -> np.ndarray:
     """Converts EMST to vertex ordering via DFS traversal."""
